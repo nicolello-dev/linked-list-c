@@ -29,7 +29,7 @@ void add_element(linked_list *list, int value) {
 // Gets the nth element of the list, starting at 0.
 int get_nth_element(linked_list *list, int n) {
     li_element *element = list->head;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n-1; i++) {
         element = element->next;
     }
     return element->value;
